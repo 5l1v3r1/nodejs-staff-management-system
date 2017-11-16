@@ -2,6 +2,22 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap4.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+  body(style="padding:0px;margin:0px")
+    div(class="container" style="padding-top:3em")
+      nav(class="nav nav-pills nav-fill justify-content-end")
+      
+          a(class="nav-link active" href="#") Dashboard
+      
+          a(class="nav-link" href="#") Create Staff
+      
+          a(class="nav-link" href="#") Search Staff
+      
+          a(class="nav-link" href="#") All Staffs
+      
+          a(class="nav-link" href="#") Logout
+
+      div(style="padding:20px")
+      block content
+
